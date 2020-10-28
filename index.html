@@ -57,7 +57,29 @@
                     </div>
                     <!--End of Logo-->
         
-                    <app-social></app-social>
+                    <aside>
+
+                        <!--Social Icons in Header-->
+                        <ul class="social-icons">
+                            <li>
+                                <a target="_blank" title="Facebook" href="https://www.facebook.com/Oyshter">
+                                    <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Instagram" href="https://www.instagram.com/woishingmachine">
+                                    <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/in/oishin-smith-019697193/">
+                                    <i class="fa fa-linkedin fa-1x"></i><span>Linkedin</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--End of Social Icons in Header-->
+                    
+                    </aside>
         
                     
         
@@ -65,22 +87,22 @@
                 <nav id="nav-main">
                     <ul>
                         <li>
-                            <a routerLink="/Home" routerfragment="header" (click)="navigateToSection('header')">Home</a>
+                            <a href="#Home">Home</a>
                         </li>
                         <li>
-                            <a routerLink="" fragment="about" (click)="navigateToSection('about')">About</a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <a routerLink="" fragment="Timeline" (click)="navigateToSection('Timeline')">Timeline</a>
+                            <a href="#Portfolio">Portfolio</a>
                         </li>
                         <li>
-                            <a routerLink="" fragment="Portfolio" (click)="navigateToSection('Portfolio')">Portfolio</a>
+                            <a href="#Timeline">Timeline</a>
                         </li>
                         <li>
-                            <a routerLink="/Gallery">Gallery</a>
+                            <a href="gallery.html">Gallery</a>
                         </li>
                         <li>
-                            <a routerLink="/Hobbies">Hobbies</a>
+                            <a href="hobbies.html">Hobbies</a>
                         </li>
                     </ul>
                 </nav>
@@ -461,23 +483,42 @@
             </div>
             <!--End of Content Section-->
 
+            <!--Footer-->
+            <footer id="landing-footer" class="clearfix">
+                <div class="row clearfix">
 
-      
-          <!--Main Content Area-->
-          <main id="content">
-            <router-outlet></router-outlet>
-            <!--
-              <app-intro></app-intro>
-              <app-gallery></app-gallery>
-              <app-content></app-content>
-              <app-thankyou></app-thankyou>
-              <app-previous-work></app-previous-work>
-              <app-donations></app-donations>
-            -->
-          </main>
-          <!--End Main Content Area-->
-      
-          <app-footer></app-footer>
+                    <p id="copyright" class="col-2">Made with love by <a href="https://www.shapingrain.com">ShapingRain</a></p>
+
+                    <!--Social Icons in Footer-->
+                    <div class="col-2 social-icons" id="footer-social">
+                        <aside>
+
+                            <!--Social Icons in Header-->
+                            <ul class="social-icons">
+                                <li>
+                                    <a target="_blank" title="Facebook" href="https://www.facebook.com/Oyshter">
+                                        <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" title="Instagram" href="https://www.instagram.com/woishingmachine">
+                                        <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" title="Linkedin" href="https://www.linkedin.com/in/oishin-smith-019697193/">
+                                        <i class="fa fa-linkedin fa-1x"></i><span>Linkedin</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--End of Social Icons in Header-->
+                        
+                        </aside>
+                    </div>
+                    <!--End of Social Icons in Footer-->
+                </div>
+            </footer>
+            <!--End of Footer-->
       
       </div>
 
