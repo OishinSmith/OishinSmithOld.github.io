@@ -31,10 +31,12 @@ $(document).ready(function () {
 		}
 	});
 
-	/* Sticky Navigation */
+	/* Sticky Navigation 
+	
 	if (!!$.prototype.stickyNavbar) {
 		$('#header').stickyNavbar();
 	}
+	*/
 
 	$('#content').waypoint(function (direction) {
 		if (direction === 'down') {
